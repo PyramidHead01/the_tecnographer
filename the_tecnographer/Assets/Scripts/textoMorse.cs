@@ -43,14 +43,21 @@ public class textoMorse : MonoBehaviour
             caracterActual = arrayCaracteres[cabezal];
         else
         {
-            Victoria();
+            Fin();
+            //Victoria();
         }
 
         if(tiempoRestante <= 0)
         {
-            Derrota();
+            Fin();
+            //Derrota();
         }
 
+    }
+
+    void Fin()
+    {
+        Debug.Log("TRANSCRIPCION COMPLETA");
     }
 
     void Victoria()

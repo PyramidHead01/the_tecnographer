@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\textoMorse.cs" />
     <Compile Include="Assets\Scripts\botonBase.cs" />
     <Compile Include="Assets\Scripts\SiguientesTextos.cs" />
+    <Compile Include="Assets\Scripts\pantallaFinal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
