@@ -37,6 +37,10 @@ public class botonBase : MonoBehaviour, IUpdateSelectedHandler, IPointerDownHand
             Resultado();
 
         }
+        else
+        {
+            Fallo();
+        }
 
     }
 
@@ -51,7 +55,16 @@ public class botonBase : MonoBehaviour, IUpdateSelectedHandler, IPointerDownHand
             Resultado();
 
         }
+        else
+        {
+            Fallo();
+        }
 
+    }
+
+    void Fallo()
+    {
+        textoMorse.errores++;
     }
 
     void Resultado()
