@@ -20,9 +20,11 @@ public class SiguientesTextos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (orden + textoMorse.cabezal <= textoMorse.arrayCaracteres.Count)
-            texto.text = textoMorse.arrayCaracteres[orden + textoMorse.cabezal].ToString();
+
+        if (orden + textoMorse.cabezal < textoMorse.arrayCaracteres.Count)
+            texto.text = textoMorse.arrayCaracteres[orden + (int)textoMorse.cabezal].ToString();
         else
             texto.text = "";
+
     }
 }
